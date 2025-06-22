@@ -1,6 +1,9 @@
 h1, p,body{
 margin: 0;
 }
+p, a{
+font-size: 20px;
+}
 
 header{
 margin-bottom: 20px;
@@ -15,7 +18,7 @@ padding: 10px;
 }
 #parent{
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 .contents{
 border: 3px solid rgb(238, 204, 204);
@@ -56,13 +59,13 @@ color: rgb(245, 178, 168);
 }
 
 @media screen and (max-width: 768px) {
-    h2 {
+   h2 {
         font-size: 30px;
     }
     p{
      font-size: 25px;
     }
     #parent{
-        display: block;
+        flex-direction: column;
     }
 }
